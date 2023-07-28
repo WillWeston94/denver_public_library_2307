@@ -13,4 +13,8 @@ describe Author do
     expect(@charlotte_bronte.books).to eq([])
   end
 
+  it 'jane_eyre exists as book' do
+    require 'pry' ; binding.pry
+    expect(@jane_eyre = @charlotte_bronte.write("Jane Eyre", "October 16, 1847")).to eq()
+  end
 end
